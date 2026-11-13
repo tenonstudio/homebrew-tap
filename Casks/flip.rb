@@ -1,14 +1,14 @@
 cask "flip" do
   version "0.29.20,20261113.95"
-  sha256 "d8905235629dfdfe5482598c3dada4833347a5b9fd906cb12414260dc034a0cb"
+  sha256 "78ffd00fbec246bd11736bd072c22939537e998228de318ad007b25f3ad44af0"
 
-  url "https://gamepunk.github.io/Flip/Flip-#{version.csv.first}.dmg"
+  url "https://tenonstudio.github.io/apps/flip/downloads/Flip-#{version.csv.first}.dmg"
   name "Flip"
-  desc "Menu bar utility for Mac system toggles, shortcuts, and custom commands"
+  desc "Menu bar utility for system toggles, shortcuts, and custom commands"
   homepage "https://tenonstudio.github.io/apps/flip/"
 
   livecheck do
-    url "https://gamepunk.github.io/Flip/appcast.xml"
+    url "https://tenonstudio.github.io/apps/flip/appcast.xml"
     strategy :sparkle
   end
 

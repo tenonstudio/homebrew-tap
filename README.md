@@ -18,13 +18,13 @@ brew tap tenonstudio/tap
 
 ## Apps
 
-| App | What it does | Homebrew |
+| App | What it does | Install |
 | --- | --- | --- |
 | [Flip](https://tenonstudio.github.io/apps/flip/) | Mac system toggles, shortcuts, and custom commands in one menu-bar panel. | `brew install --cask tenonstudio/tap/flip` |
-| [Porthole](https://tenonstudio.github.io/apps/porthole/) | Turn any window or screen region into a floating live mirror. | Cask coming with the next release |
-| [Tessera](https://github.com/tenonstudio/tessera) | Live p5.js generative wallpapers for the desktop. | In development |
+| [Porthole](https://tenonstudio.github.io/apps/porthole/) | Turn any window or screen region into a floating live mirror. | `brew install --cask tenonstudio/tap/porthole` |
+| [Tessera](https://tenonstudio.github.io/apps/tessera/) | Live p5.js generative wallpapers for the desktop. | `brew install --cask tenonstudio/tap/tessera` |
 
-Only **Flip** is installable from this tap right now. Porthole and Tessera will be added under their new names once their Porthole/Tessera-branded builds are packaged and hosted.
+Downloads and Sparkle feeds live under `tenonstudio.github.io/apps/<app>/`.
 
 ## Flip
 
@@ -37,33 +37,52 @@ brew uninstall --cask tenonstudio/tap/flip
 - **14-day trial**, then a license is required for continued use; there is no subscription.
 - Some controls (Low Power, clamshell sleep, high-energy modes) install a **System Helper** and ask for administrator approval once.
 - Uninstall the System Helper from Flip's settings before removing the app.
-- Current builds are signed with an Apple Development certificate and are not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
+- Current builds may be signed with an Apple Development certificate and are not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
 
 ## Porthole
 
-Porthole is Tenon’s macOS window-mirroring app. The current public build is still hosted on the old download page; the product and future cask are named **Porthole**.
+```bash
+brew install --cask tenonstudio/tap/porthole
+brew uninstall --cask tenonstudio/tap/porthole
+```
 
-- **macOS 13.0+** (Ventura) on Apple silicon.
+- **macOS 13.0+** (Ventura), Apple silicon.
 - **Free** — every feature, no account, no license key.
-- Requires Screen Recording permission in **System Settings → Privacy & Security → Screen Recording**.
-
-A `porthole` cask will be added when the Porthole-branded DMG is published.
+- Requires Screen Recording permission in **System Settings → Privacy & Security → Screen Recording**; restart Porthole after granting it.
+- The app is named **Porthole**; the older Magic Mirror build is no longer the cask target.
 
 ## Tessera
 
-Tessera is Tenon's live p5.js wallpaper app. It is in private development and has no public Homebrew cask yet. When it ships, it will be added as `tenonstudio/tap/tessera`.
+```bash
+brew install --cask tenonstudio/tap/tessera
+brew uninstall --cask tenonstudio/tap/tessera
+```
 
-## Updating Flip
+- **macOS 12.0+** (Monterey).
+- A menu-bar wallpaper agent running p5.js sketches.
+- The app bundles a `wall` command at `Tessera.app/Contents/MacOS/wall` for creating, validating, and packing wallpaper scripts.
+- Use **Quit Tessera** from its menu to stop the wallpaper.
 
-Flip uses Sparkle for automatic updates, so its cask declares `auto_updates true`. `brew upgrade` skips it by default. Use the app's updater, or:
+## Updates
+
+All three apps use Sparkle for automatic updates, so their casks declare
+`auto_updates true`. `brew upgrade` skips them by default; use the in-app
+updater, or:
 
 ```bash
 brew upgrade --cask --greedy tenonstudio/tap/flip
+brew upgrade --cask --greedy tenonstudio/tap/porthole
+brew upgrade --cask --greedy tenonstudio/tap/tessera
 ```
 
 ## Notes
 
-- Casks live under `Casks/`.
+- Casks live under `Casks/`; the three icon sources under `assets/` are
+  1024×1024 PNGs.
+- Appcast feeds:
+  - `https://tenonstudio.github.io/apps/flip/appcast.xml`
+  - `https://tenonstudio.github.io/apps/porthole/appcast.xml`
+  - `https://tenonstudio.github.io/apps/tessera/appcast.xml`
 - Report issues in the relevant app repository or email [tenonstudio@163.com](mailto:tenonstudio@163.com).
 - 中文说明：[README.zh-CN.md](README.zh-CN.md)
 

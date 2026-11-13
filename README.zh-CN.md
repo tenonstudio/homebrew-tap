@@ -45,7 +45,7 @@ brew uninstall --cask tenonstudio/tap/flip
 
 Porthole 是 Tenon 的 macOS 窗口镜像应用。旧构建仍托管在旧下载页，但产品和未来的 cask 都使用 **Porthole**。
 
-- 系统要求：macOS 26.0+（Tahoe），Apple 芯片。
+- 系统要求：macOS 13.0+（Tahoe），Apple 芯片。
 - 完全免费，无需账号或激活码。
 - 首次使用需在「系统设置 → 隐私与安全性 → 屏幕录制」授权。
 

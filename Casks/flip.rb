@@ -1,6 +1,6 @@
 cask "flip" do
   version "0.29.20,20261113.95"
-  sha256 "78ffd00fbec246bd11736bd072c22939537e998228de318ad007b25f3ad44af0"
+  sha256 "e56011d37a36f4a6c2db6c0a279a1130de79560dc0e424841b3a6d1e90e2f0cb"
 
   url "https://tenonstudio.github.io/apps/flip/downloads/Flip-#{version.csv.first}.dmg"
   name "Flip"

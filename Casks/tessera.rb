@@ -1,6 +1,6 @@
 cask "tessera" do
   version "0.1.0"
-  sha256 "bcf9bdf82f3a012163027e8dbeb2ca9c6068ac6c6ff24a6dbca4058459069783"
+  sha256 "955f8dc91ea8f5fb88dd6e7bf38959d304ce56688f46dc4900c4614af4015ce9"
 
   url "https://tenonstudio.github.io/apps/tessera/downloads/Tessera-#{version}.dmg"
   name "Tessera"

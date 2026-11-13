@@ -1,3 +1,5 @@
+> [English README](README.md)
+
 # Homebrew Tap
 
 ![Brew](https://img.shields.io/badge/Homebrew-tap-blue)

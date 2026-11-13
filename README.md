@@ -45,7 +45,7 @@ brew uninstall --cask tenonstudio/tap/magic-mirror
 - **macOS 26.0+** (Tahoe) on Apple silicon.
 - **Free** — every feature, no account, no license key.
 - Requires Screen Recording permission. Grant it in **System Settings → Privacy & Security → Screen Recording**, then restart the app.
-- The cask still uses the `magic-mirror` name while the Porthole-branded release is being prepared; the app inside is the current Porthole build.
+- The cask still uses the legacy `magic-mirror` name and installs the 0.0.6 build under the previous Magic Mirror name. A `porthole` cask will replace it with the next release.
 - Current builds are signed with an Apple Development certificate and are not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
 
 ## Updating

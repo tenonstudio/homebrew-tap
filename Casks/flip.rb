@@ -4,8 +4,8 @@ cask "flip" do
 
   url "https://gamepunk.github.io/Flip/Flip-#{version.csv.first}.dmg"
   name "Flip"
-  desc "菜单栏效率工具，集中控制系统开关与自定义脚本"
-  homepage "https://gamepunk.github.io/Flip/"
+  desc "Menu bar utility for Mac system toggles, shortcuts, and custom commands"
+  homepage "https://tenonstudio.github.io/apps/flip/"
 
   livecheck do
     url "https://gamepunk.github.io/Flip/appcast.xml"

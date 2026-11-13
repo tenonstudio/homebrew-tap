@@ -1,4 +1,10 @@
-# Tenon Homebrew Tap
+<p align="center">
+  <img src="https://tenonstudio.github.io/assets/flip-icon.png" width="72" alt="Flip icon">
+  &nbsp;&nbsp;
+  <img src="https://tenonstudio.github.io/assets/magic-mirror-icon.png" width="72" alt="Porthole icon">
+</p>
+
+<h1 align="center">Tenon Homebrew Tap</h1>
 
 Homebrew casks for macOS apps made by [Tenon Studio](https://tenonstudio.github.io/).
 

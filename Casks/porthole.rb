@@ -1,6 +1,6 @@
 cask "porthole" do
   version "0.0.6"
-  sha256 "5cf94907f761656c8c147a8ecd4677d41d1f88cf944ebf24305669b93d2c31ff"
+  sha256 "92d2aa3b94c13d2c923da17a09c9491733badfc654e7092748818d6dccaa3262"
 
   url "https://tenonstudio.github.io/apps/porthole/downloads/Porthole-#{version}.dmg"
   name "Porthole"

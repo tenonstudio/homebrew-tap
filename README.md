@@ -43,7 +43,7 @@ brew uninstall --cask tenonstudio/tap/flip
 
 Porthole is Tenon’s macOS window-mirroring app. The current public build is still hosted on the old download page; the product and future cask are named **Porthole**.
 
-- **macOS 13.0+** (Tahoe) on Apple silicon.
+- **macOS 13.0+** (Ventura) on Apple silicon.
 - **Free** — every feature, no account, no license key.
 - Requires Screen Recording permission in **System Settings → Privacy & Security → Screen Recording**.
 

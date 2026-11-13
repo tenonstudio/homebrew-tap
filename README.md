@@ -41,7 +41,7 @@ brew uninstall --cask tenonstudio/tap/flip
 
 ## Porthole
 
-Porthole is the macOS window-mirroring app, renamed from Magic Mirror. The current public build is still hosted on the old download page, but the product and future cask are named **Porthole**.
+Porthole is Tenon’s macOS window-mirroring app. The current public build is still hosted on the old download page; the product and future cask are named **Porthole**.
 
 - **macOS 26.0+** (Tahoe) on Apple silicon.
 - **Free** — every feature, no account, no license key.

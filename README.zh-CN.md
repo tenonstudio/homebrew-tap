@@ -43,7 +43,7 @@ brew uninstall --cask tenonstudio/tap/flip
 
 ## Porthole
 
-Porthole 是原 Magic Mirror 的 macOS 窗口镜像应用。旧构建仍托管在旧下载页，但产品名和未来的 cask 都使用 **Porthole**。
+Porthole 是 Tenon 的 macOS 窗口镜像应用。旧构建仍托管在旧下载页，但产品和未来的 cask 都使用 **Porthole**。
 
 - 系统要求：macOS 26.0+（Tahoe），Apple 芯片。
 - 完全免费，无需账号或激活码。

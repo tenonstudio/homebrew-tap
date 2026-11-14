@@ -6,6 +6,8 @@
   <img src="assets/tessera.png" width="72" alt="Tessera icon">
   &nbsp;
   <img src="assets/launchpad.png" width="72" alt="Launchpad icon">
+  &nbsp;
+  <img src="assets/bubble.png" width="72" alt="Bubble icon">
 </p>
 
 <h1 align="center">Tenon Homebrew Tap</h1>
@@ -27,6 +29,7 @@ brew trust tenonstudio/tap
 | [Porthole](https://tenonstudio.github.io/apps/porthole/) | Turn any window or screen region into a floating live mirror. | `brew install --cask tenonstudio/tap/porthole` |
 | [Tessera](https://tenonstudio.github.io/apps/tessera/) | Live p5.js generative wallpapers for the desktop. | `brew install --cask tenonstudio/tap/tessera` |
 | [Launchpad](https://tenonstudio.github.io/apps/launchpad/) | Native application launcher for macOS 26. | `brew install --cask tenonstudio/tap/launchpad` |
+| [Bubble](https://tenonstudio.github.io/apps/bubble/) | A selection action bar with native extensions and PopClip migration. | `brew install --cask tenonstudio/tap/bubble` |
 
 Downloads and Sparkle feeds live under `tenonstudio.github.io/apps/<app>/`.
 
@@ -79,9 +82,22 @@ brew uninstall --cask tenonstudio/tap/launchpad
 - Restores the full-screen launcher removed in macOS 26, with pinyin search, folders, compact glass mode, hot corners, F4 and global shortcuts.
 - Current builds are ad-hoc signed and not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
 
+## Bubble
+
+```bash
+brew install --cask tenonstudio/tap/bubble
+brew uninstall --cask tenonstudio/tap/bubble
+```
+
+- **macOS 14.0+** (Sonoma), Universal.
+- **Free** — no account or license key.
+- A menu-bar accessory that shows a compact action bar for selected text. It needs Accessibility permission in **System Settings → Privacy & Security**.
+- Bubble has its own `.bubbleext` extension ecosystem; existing PopClip extensions are migrated on first use.
+- Builds are signed with an Apple Development certificate and are not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
+
 ## Updates
 
-All four apps use Sparkle for automatic updates, so their casks declare
+All five apps use Sparkle for automatic updates, so their casks declare
 `auto_updates true`. `brew upgrade` skips them by default; use the in-app
 updater, or:
 
@@ -90,17 +106,19 @@ brew upgrade --cask --greedy tenonstudio/tap/flip
 brew upgrade --cask --greedy tenonstudio/tap/porthole
 brew upgrade --cask --greedy tenonstudio/tap/tessera
 brew upgrade --cask --greedy tenonstudio/tap/launchpad
+brew upgrade --cask --greedy tenonstudio/tap/bubble
 ```
 
 ## Notes
 
-- Casks live under `Casks/`; the four icon sources under `assets/` are
+- Casks live under `Casks/`; the five icon sources under `assets/` are
   1024×1024 PNGs.
 - Appcast feeds:
   - `https://tenonstudio.github.io/apps/flip/appcast.xml`
   - `https://tenonstudio.github.io/apps/porthole/appcast.xml`
   - `https://tenonstudio.github.io/apps/tessera/appcast.xml`
   - `https://tenonstudio.github.io/apps/launchpad/appcast.xml`
+  - `https://tenonstudio.github.io/apps/bubble/appcast.xml`
 - Report issues in the relevant app repository or email [tenonstudio@163.com](mailto:tenonstudio@163.com).
 - 中文说明：[README.zh-CN.md](README.zh-CN.md)
 

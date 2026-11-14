@@ -8,6 +8,8 @@
   <img src="assets/tessera.png" width="72" alt="Tessera 图标">
   &nbsp;
   <img src="assets/launchpad.png" width="72" alt="Launchpad 图标">
+  &nbsp;
+  <img src="assets/bubble.png" width="72" alt="Bubble 图标">
 </p>
 
 <h1 align="center">Tenon Homebrew Tap</h1>
@@ -21,7 +23,7 @@ brew tap tenonstudio/tap
 brew trust tenonstudio/tap
 ```
 
-## 四个应用
+## 五个应用
 
 | 应用 | 用途 | 安装 |
 | --- | --- | --- |
@@ -29,6 +31,7 @@ brew trust tenonstudio/tap
 | [Porthole](https://tenonstudio.github.io/apps/porthole/) | 把任意窗口或屏幕区域变成实时悬浮镜像。 | `brew install --cask tenonstudio/tap/porthole` |
 | [Tessera](https://tenonstudio.github.io/apps/tessera/) | p5.js 实时生成艺术壁纸。 | `brew install --cask tenonstudio/tap/tessera` |
 | [Launchpad](https://tenonstudio.github.io/apps/launchpad/) | 为 macOS 26 重建的原生应用启动台。 | `brew install --cask tenonstudio/tap/launchpad` |
+| [Bubble](https://tenonstudio.github.io/apps/bubble/) | 带原生扩展与 PopClip 迁移的划词操作栏。 | `brew install --cask tenonstudio/tap/bubble` |
 
 下载与 Sparkle 更新源统一位于 `tenonstudio.github.io/apps/<app>/`。
 
@@ -81,9 +84,22 @@ brew uninstall --cask tenonstudio/tap/launchpad
 - 重建 macOS 26 移除的全屏启动台，支持拼音搜索、文件夹、小窗玻璃模式、触发角、F4 和全局快捷键。
 - 当前构建为 ad-hoc 签名、未公证。首次打开如遇 Gatekeeper 提示，右键选择「打开」。
 
+## Bubble
+
+```bash
+brew install --cask tenonstudio/tap/bubble
+brew uninstall --cask tenonstudio/tap/bubble
+```
+
+- 系统要求：macOS 14.0+（Sonoma），Universal。
+- 完全免费，无需账号或激活码。
+- 菜单栏辅助 App，为选中文字显示紧凑操作栏；需要在「系统设置 → 隐私与安全性」中授予辅助功能权限。
+- 有自己的 `.bubbleext` 扩展生态；已有的 PopClip 扩展会在首次使用时迁移。
+- 当前构建使用 Apple Development 证书签名、未公证。首次打开如遇 Gatekeeper 提示，右键选择「打开」。
+
 ## 更新
 
-四个应用都使用 Sparkle 自动更新，cask 声明了 `auto_updates true`，所以 `brew upgrade`
+五个应用都使用 Sparkle 自动更新，cask 声明了 `auto_updates true`，所以 `brew upgrade`
 默认跳过。使用 App 内置更新，或：
 
 ```bash
@@ -91,16 +107,18 @@ brew upgrade --cask --greedy tenonstudio/tap/flip
 brew upgrade --cask --greedy tenonstudio/tap/porthole
 brew upgrade --cask --greedy tenonstudio/tap/tessera
 brew upgrade --cask --greedy tenonstudio/tap/launchpad
+brew upgrade --cask --greedy tenonstudio/tap/bubble
 ```
 
 ## 说明
 
-- Cask 文件位于 `Casks/`；`assets/` 下四张图标统一为 1024×1024 PNG。
+- Cask 文件位于 `Casks/`；`assets/` 下五张图标统一为 1024×1024 PNG。
 - Appcast：
   - `https://tenonstudio.github.io/apps/flip/appcast.xml`
   - `https://tenonstudio.github.io/apps/porthole/appcast.xml`
   - `https://tenonstudio.github.io/apps/tessera/appcast.xml`
   - `https://tenonstudio.github.io/apps/launchpad/appcast.xml`
+  - `https://tenonstudio.github.io/apps/bubble/appcast.xml`
 - 问题反馈请到对应应用仓库，或发邮件到 [tenonstudio@163.com](mailto:tenonstudio@163.com)。
 - English README: [README.md](README.md)
 

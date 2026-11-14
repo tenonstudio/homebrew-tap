@@ -1,6 +1,6 @@
 cask "bubble" do
-  version "0.3.0"
-  sha256 "dbaebb29d7c8f1ecc3984af789461fae78c1fc90451353c36d0000581d4a8f3e"
+  version "0.3.1"
+  sha256 "b517861292b4cc309a48e68bade5058ffe0fe75c072814391ae17f22b323e1a1"
 
   url "https://tenonstudio.github.io/apps/bubble/downloads/Bubble-#{version}.dmg"
   name "Bubble"
@@ -14,7 +14,7 @@ cask "bubble" do
 
   # Bubble ships with Sparkle; let the in-app updater own upgrades.
   auto_updates true
-  depends_on macos: :sonoma
+  depends_on macos: :monterey
 
   app "Bubble.app"
 

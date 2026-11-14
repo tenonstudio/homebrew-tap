@@ -89,10 +89,11 @@ brew install --cask tenonstudio/tap/bubble
 brew uninstall --cask tenonstudio/tap/bubble
 ```
 
-- **macOS 14.0+** (Sonoma), Universal.
+- **macOS 12.0+** (Monterey), Universal.
 - **Free** — no account or license key.
 - A menu-bar accessory that shows a compact action bar for selected text. It needs Accessibility permission in **System Settings → Privacy & Security**.
 - Bubble has its own `.bubbleext` extension ecosystem; existing PopClip extensions are migrated on first use.
+- Start at login requires macOS 13 or later.
 - Builds are signed with an Apple Development certificate and are not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
 
 ## Updates

@@ -91,10 +91,11 @@ brew install --cask tenonstudio/tap/bubble
 brew uninstall --cask tenonstudio/tap/bubble
 ```
 
-- 系统要求：macOS 14.0+（Sonoma），Universal。
+- 系统要求：macOS 12.0+（Monterey），Universal。
 - 完全免费，无需账号或激活码。
 - 菜单栏辅助 App，为选中文字显示紧凑操作栏；需要在「系统设置 → 隐私与安全性」中授予辅助功能权限。
 - 有自己的 `.bubbleext` 扩展生态；已有的 PopClip 扩展会在首次使用时迁移。
+- 登录时启动需要 macOS 13 或更高版本。
 - 当前构建使用 Apple Development 证书签名、未公证。首次打开如遇 Gatekeeper 提示，右键选择「打开」。
 
 ## 更新

@@ -4,6 +4,8 @@
   <img src="assets/porthole.png" width="72" alt="Porthole icon">
   &nbsp;&nbsp;
   <img src="assets/tessera.png" width="72" alt="Tessera icon">
+  &nbsp;
+  <img src="assets/launchpad.png" width="72" alt="Launchpad icon">
 </p>
 
 <h1 align="center">Tenon Homebrew Tap</h1>
@@ -23,6 +25,7 @@ brew tap tenonstudio/tap
 | [Flip](https://tenonstudio.github.io/apps/flip/) | Mac system toggles, shortcuts, and custom commands in one menu-bar panel. | `brew install --cask tenonstudio/tap/flip` |
 | [Porthole](https://tenonstudio.github.io/apps/porthole/) | Turn any window or screen region into a floating live mirror. | `brew install --cask tenonstudio/tap/porthole` |
 | [Tessera](https://tenonstudio.github.io/apps/tessera/) | Live p5.js generative wallpapers for the desktop. | `brew install --cask tenonstudio/tap/tessera` |
+| [Launchpad](https://tenonstudio.github.io/apps/launchpad/) | Native application launcher for macOS 26. | `brew install --cask tenonstudio/tap/launchpad` |
 
 Downloads and Sparkle feeds live under `tenonstudio.github.io/apps/<app>/`.
 
@@ -63,9 +66,21 @@ brew uninstall --cask tenonstudio/tap/tessera
 - The app bundles a `wall` command at `Tessera.app/Contents/MacOS/wall` for creating, validating, and packing wallpaper scripts.
 - Use **Quit Tessera** from its menu to stop the wallpaper.
 
+## Launchpad
+
+```bash
+brew install --cask tenonstudio/tap/launchpad
+brew uninstall --cask tenonstudio/tap/launchpad
+```
+
+- **macOS 26+** (Tahoe), Universal.
+- **Free** — no account or license key.
+- Restores the full-screen launcher removed in macOS 26, with pinyin search, folders, compact glass mode, hot corners, F4 and global shortcuts.
+- Current builds are ad-hoc signed and not notarized. If Gatekeeper blocks the first launch, right-click the app and choose **Open**.
+
 ## Updates
 
-All three apps use Sparkle for automatic updates, so their casks declare
+All four apps use Sparkle for automatic updates, so their casks declare
 `auto_updates true`. `brew upgrade` skips them by default; use the in-app
 updater, or:
 
@@ -73,16 +88,18 @@ updater, or:
 brew upgrade --cask --greedy tenonstudio/tap/flip
 brew upgrade --cask --greedy tenonstudio/tap/porthole
 brew upgrade --cask --greedy tenonstudio/tap/tessera
+brew upgrade --cask --greedy tenonstudio/tap/launchpad
 ```
 
 ## Notes
 
-- Casks live under `Casks/`; the three icon sources under `assets/` are
+- Casks live under `Casks/`; the four icon sources under `assets/` are
   1024×1024 PNGs.
 - Appcast feeds:
   - `https://tenonstudio.github.io/apps/flip/appcast.xml`
   - `https://tenonstudio.github.io/apps/porthole/appcast.xml`
   - `https://tenonstudio.github.io/apps/tessera/appcast.xml`
+  - `https://tenonstudio.github.io/apps/launchpad/appcast.xml`
 - Report issues in the relevant app repository or email [tenonstudio@163.com](mailto:tenonstudio@163.com).
 - 中文说明：[README.zh-CN.md](README.zh-CN.md)
 

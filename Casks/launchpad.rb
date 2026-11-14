@@ -1,6 +1,6 @@
 cask "launchpad" do
-  version "0.3.13"
-  sha256 "132eb5892c86275e245751738bf46e730dc23d0187eea48b32377ee285be1951"
+  version "0.3.14"
+  sha256 "65e24701bd209e0ec5d43ddf419abc153fa1da88b4393088c33520f8759b2b46"
 
   url "https://tenonstudio.github.io/apps/launchpad/downloads/Launchpad-#{version}.dmg"
   name "Launchpad"

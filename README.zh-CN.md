@@ -18,6 +18,7 @@ Tenon Studio 的 macOS 应用 Homebrew tap。
 
 ```bash
 brew tap tenonstudio/tap
+brew trust tenonstudio/tap
 ```
 
 ## 四个应用

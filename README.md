@@ -16,6 +16,7 @@ Homebrew casks for macOS apps made by [Tenon Studio](https://tenonstudio.github.
 
 ```bash
 brew tap tenonstudio/tap
+brew trust tenonstudio/tap
 ```
 
 ## Apps

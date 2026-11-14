@@ -26,6 +26,8 @@ cask "launchpad" do
 
   caveats <<~EOS
     Launchpad requires macOS 26 or later.
+    On Homebrew 7+, trust the tap before installing:
+      brew trust tenonstudio/tap
     This build is ad-hoc signed and not notarized. If Gatekeeper blocks the first
     launch, right-click Launchpad.app and choose Open.
   EOS

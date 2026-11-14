@@ -1,6 +1,6 @@
 cask "bubble" do
-  version "0.3.14"
-  sha256 "aed8409f43845c0e3341866f45b3365c5058902bd4bd5eeb810b8a72ca7750f6"
+  version "0.3.15"
+  sha256 "79887e97fb51ba5a79896cf435eba46600752e75a863f3b1b9ecb097c615e85e"
 
   url "https://tenonstudio.github.io/apps/bubble/downloads/Bubble-#{version}.dmg"
   name "Bubble"
